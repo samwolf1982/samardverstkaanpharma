@@ -20,4 +20,10 @@ class AppAsset extends AssetBundle
         'yii\web\YiiAsset',
         'yii\bootstrap\BootstrapAsset',
     ];
+
+    public $publishOptions = [
+        'forceCopy' => true,
+        //you can also make it work only in debug mode: 'forceCopy' => YII_DEBUG
+    ];
+
 }

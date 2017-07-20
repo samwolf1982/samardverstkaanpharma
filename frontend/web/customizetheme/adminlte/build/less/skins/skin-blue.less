@@ -1,0 +1,272 @@
+/*
+ * Skin: Blue
+ * ----------
+ */
+@import "../../bootstrap-less/mixins.less";
+@import "../../bootstrap-less/variables.less";
+@import "../variables.less";
+@import "../mixins.less";
+
+.skin-blue {
+  //Navbar
+  .main-header {
+    .navbar {
+      .navbar-variant(@light-blue);
+      .sidebar-toggle {
+        color: #fff;
+        &:hover {
+          background-color: darken(@light-blue, 5%);
+        }
+      }
+      @media (max-width: @screen-header-collapse) {
+        .dropdown-menu {
+          li {
+            &.divider {
+              background-color: rgba(255, 255, 255, 0.1);
+            }
+            a {
+              color: #fff;
+              &:hover {
+                background: darken(@light-blue, 5%);
+              }
+            }
+          }
+        }
+      }
+    }
+    //Logo
+    .logo {
+      .logo-variant(@light-blue);
+    }
+
+    li.user-header {
+      background-color: @light-blue;
+    }
+  }
+
+  //Content Header
+  .content-header {
+    background: transparent;
+  }
+
+  //Create the sidebar skin
+  .skin-dark-sidebar(@light-blue);
+}
+
+.skin-blue.layout-top-nav .main-header > .logo {
+  .logo-variant(@light-blue);
+}
+
+//-------------- all css
+
+.moneybtn:active:hover{
+  background-color: #c2a377;
+}
+.moneybtn{
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  background-color: #c2a377;
+  width: 70%;
+  background-color: #c2a377;
+  border: none;
+  color: white;
+}
+
+.user-panel{
+  height:100px;
+}
+
+.info p {
+  background-color:#c2a377;
+  padding: 15px 35px;
+}
+
+
+
+
+
+.skin-blue .sidebar-menu>li.header {
+  color: white;
+  background: #6faea0;;
+}
+
+.borderbottom span{
+  border-bottom: solid 3px #76b8a9;
+  padding: 8px;
+}
+
+.nawitem{
+  background-color: #76b8a9;
+}
+
+.sidebar-menu>li.nawitem{
+  margin-top: 5px;
+  span{
+    padding-left: 10px;
+  }
+}
+
+.sidebar-menu .treeview-menu>li{
+  margin-top: 5px;
+  background: #68aa9c;
+  padding: 5px;
+}
+
+
+.skin-blue .sidebar-menu>li>.treeview-menu {
+
+ background: transparent;
+  padding-left: 0;
+
+}
+
+
+
+.fa-s-setting1:before, .fa-s-setting2:before, .fa-s-setting3:before, .fa-s-setting4:before, .fa-s-setting5:before, .fa-s-setting6:before, .fa-s-setting7:before {
+
+  background-image: url('/img/icons/1.png');
+  background-size: 20px 20px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  content: "";
+  position: relative;
+  top: 5px;
+}
+
+
+.fa-s-setting2:before {
+
+  background-image: url('/img/icons/2.png');
+
+}
+.fa-s-setting3:before {
+
+  background-image: url('/img/icons/3.png');
+
+}
+.fa-s-setting4:before {
+
+  background-image: url('/img/icons/4.png');
+
+}
+.fa-s-setting5:before {
+
+  background-image: url('/img/icons/5.png');
+
+}
+.fa-s-setting6:before {
+
+  background-image: url('/img/icons/6.png');
+
+}
+.fa-s-setting7:before {
+
+  background-image: url('/img/icons/7.png');
+
+}
+
+.overbreadcrump{
+  min-height: 100px;
+  padding-left: 0;
+  padding-right: 0;
+  .box-header{
+       background-color: white;
+  }
+  ul{
+    list-style: none;
+    display: inline-block;
+    display: -webkit-inline-box;
+        li{
+          padding: 5px 15px 5px 15px;
+        }
+  }
+
+
+}
+
+.content-header>.breadcrumb{
+
+  position: initial;
+  float: initial;
+}
+
+
+
+.breadcrumb > li + li:before {
+  padding: 0 5px;
+  color: #ccc;
+  content: url("/img/icons/arrowr.png");
+  
+}
+
+.breadcrumb>li.active:last-child {
+  display:none;
+}
+.breadcrumb{
+  background-color: transparent;
+  padding-left: 45px;
+
+}
+.borderbottom.text-center span {
+  font-size: 220%;
+  font-weight: 700;
+}
+
+.user-panel>.info>p {
+  font-weight: 400;
+}
+
+.skin-blue .main-header .navbar {
+  background-color: @body-bg;
+}
+
+.skin-blue .main-header .navbar .sidebar-toggle {
+  color: @light-blue;
+}
+
+.fa.fa-envelope-o, .fa.fa-bell-o, .fa.fa-flag-o, .skin-blue .main-header .navbar .nav>li>a{
+  //color: black;
+  color: @light-blue;
+}
+
+.box-header{
+  background-color: @light-blue;;
+  color: white;
+}
+
+thead {
+  color: gray;
+  tr{
+    th{
+      a{
+        color: gray;
+      }
+    }
+  }
+}
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+  z-index: 3;
+  color: #fff;
+  cursor: default;
+  background-color:@light-blue;
+  border-color: @light-blue;
+}
+.btn-success {
+  background-color: @light-blue;
+  border-color: @light-blue;
+}
+
+
+.btn-success:active:hover, .btn-success.active:hover, .open > .dropdown-toggle.btn-success:hover, .btn-success:active:focus, .btn-success.active:focus, .open > .dropdown-toggle.btn-success:focus, .btn-success:active.focus, .btn-success.active.focus, .open > .dropdown-toggle.btn-success.focus {
+  color: #fff;
+  background-color: @light-blue;
+  border-color: @light-blue;
+}
+
+.btn-success:hover, .btn-success:active, .btn-success.hover {
+  background-color: @light-blue;
+}
+
